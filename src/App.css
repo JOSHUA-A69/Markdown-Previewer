@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: rgb(17, 33, 58); /* Dark blue background */
+  background-color: #fff; /* White background */
   height: 100vh;
   justify-content: center;
 }
@@ -11,21 +11,21 @@
 /* Box container style */
 .box {
   width: 80%;
-  background-color: rgb(17, 33, 58); /* Matches the main background */
-  border: 3px solid #fff; /* White border */
-  box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.2); /* Soft white shadow */
+  background-color: #fff; /* White background */
+  border: 3px solid rgb(17, 33, 58); /* Dark blue border */
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(0, 0, 0, 0.2); /* Soft dark shadow */
   margin-bottom: 20px;
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
-  color: #fff; /* White text color */
+  color: rgb(17, 33, 58); /* Dark blue text color */
   position: relative;
 }
 
 /* Title bar style */
 .title-bar {
-  background-color: rgb(17, 33, 58); /* Dark blue background for the title bar */
+  background-color: #fff; /* White background for the title bar */
   padding: 5px;
-  color: #fff; /* White text for the title */
+  color: rgb(17, 33, 58); /* Dark blue text for the title */
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -34,34 +34,34 @@
 
 /* Close button style */
 .close-btn {
-  background-color: #fff; /* White background */
+  background-color: rgb(17, 33, 58); /* Dark blue background */
   width: 15px;
   height: 15px;
   text-align: center;
   line-height: 15px;
   border-radius: 50%;
-  color: rgb(17, 33, 58); /* Dark blue text color */
+  color: #fff; /* White text color */
   cursor: pointer;
 }
 
 /* Editor area style */
 #editor {
   height: 200px;
-  border: 1px solid #fff; /* White border */
+  border: 1px solid rgb(17, 33, 58); /* Dark blue border */
   width: 100%;
   padding: 10px;
-  background-color: rgb(17, 33, 58); /* Dark blue background */
+  background-color: #fff; /* White background */
   font-family: 'Courier New', Courier, monospace;
-  color: #fff; /* White text color */
+  color: rgb(17, 33, 58); /* Dark blue text color */
 }
 
 /* Preview area style */
 #preview {
-  width: 100%;
+  width: 65%;
   padding: 10px;
-  background-color: rgb(17, 33, 58); /* Dark blue background */
+  background-color: #fff; /* White background */
   font-family: 'Courier New', Courier, monospace;
-  color: #fff; /* White text color */
+  color: rgb(17, 33, 58); /* Dark blue text color */
 }
 
 /* Apply consistent width to editor and preview containers */
@@ -74,7 +74,7 @@ textarea {
   border: none;
   outline: none;
   resize: none;
-  background-color: rgb(17, 33, 58); /* Match background color */
-  color: #fff; /* White text color */
+  background-color: #fff; /* White background */
+  color: rgb(17, 33, 58); /* Dark blue text color */
   font-family: 'Courier New', Courier, monospace;
 }
