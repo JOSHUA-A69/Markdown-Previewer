@@ -3,17 +3,78 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  background-color: rgb(17, 33, 58); /* Dark blue background */
+  height: 100vh;
+  justify-content: center;
 }
 
-#editor {
+/* Box container style */
+.box {
   width: 80%;
-  height: 200px;
+  background-color: rgb(17, 33, 58); /* Matches the main background */
+  border: 3px solid #fff; /* White border */
+  box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.2); /* Soft white shadow */
   margin-bottom: 20px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff; /* White text color */
+  position: relative;
 }
 
-#preview {
-  width: 80%;
+/* Title bar style */
+.title-bar {
+  background-color: rgb(17, 33, 58); /* Dark blue background for the title bar */
+  padding: 5px;
+  color: #fff; /* White text for the title */
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Close button style */
+.close-btn {
+  background-color: #fff; /* White background */
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 50%;
+  color: rgb(17, 33, 58); /* Dark blue text color */
+  cursor: pointer;
+}
+
+/* Editor area style */
+#editor {
+  height: 200px;
+  border: 1px solid #fff; /* White border */
+  width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  background-color: rgb(17, 33, 58); /* Dark blue background */
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff; /* White text color */
+}
+
+/* Preview area style */
+#preview {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(17, 33, 58); /* Dark blue background */
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff; /* White text color */
+}
+
+/* Apply consistent width to editor and preview containers */
+#editor-container, #preview-container {
+  width: 80%;
+}
+
+/* Textarea styling */
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: rgb(17, 33, 58); /* Match background color */
+  color: #fff; /* White text color */
+  font-family: 'Courier New', Courier, monospace;
 }

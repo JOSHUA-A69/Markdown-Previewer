@@ -11,8 +11,20 @@ function App() {
 
   return (
     <div className="App">
-      <textarea id="editor" value={markdown} onChange={handleChange} />
-      <div id="preview" dangerouslySetInnerHTML={{ __html: marked(markdown) }} />
+      <div className="box" id="editor-container">
+        <div className="title-bar">
+          <span>Editor</span>
+          <div className="close-btn">x</div>
+        </div>
+        <textarea id="editor" value={markdown} onChange={handleChange} />
+      </div>
+      <div className="box" id="preview-container">
+        <div className="title-bar">
+          <span>Previewer</span>
+          <div className="close-btn">x</div>
+        </div>
+        <div id="preview" dangerouslySetInnerHTML={{ __html: marked(markdown) }} />
+      </div>
     </div>
   );
 }
